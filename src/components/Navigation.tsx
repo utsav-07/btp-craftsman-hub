@@ -57,7 +57,7 @@ const Navigation = () => {
               </button>
             ))}
             <Button className="btn-enterprise ml-4" asChild>
-              <a href="https://drive.google.com/file/d/1O5Bem6ndpkbZAOR6t2o0LKnAmOQG6ZfT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1fSPtbBjFqwmg3pN8De6riC7YKKX1oSeR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Eye className="mr-2 h-4 w-4" />
                 View Resume
               </a>
@@ -88,7 +88,7 @@ const Navigation = () => {
               </button>
             ))}
             <Button className="btn-enterprise w-fit mt-4" asChild>
-              <a href="https://drive.google.com/file/d/1O5Bem6ndpkbZAOR6t2o0LKnAmOQG6ZfT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1fSPtbBjFqwmg3pN8De6riC7YKKX1oSeR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Eye className="mr-2 h-4 w-4" />
                 View Resume
               </a>
