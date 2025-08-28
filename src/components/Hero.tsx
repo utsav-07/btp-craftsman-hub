@@ -42,7 +42,7 @@ const Hero = () => {
           
           {/* Brief Description */}
           <p className="text-lg mb-12 text-white/80 max-w-4xl mx-auto leading-relaxed">
-            Expert in managing enterprise cloud landscapes with SAP Business Technology Platform, 
+            Experienced in managing enterprise cloud landscapes with SAP Business Technology Platform, 
             specializing in secure integrations and optimized user experiences.
           </p>
           

@@ -73,12 +73,11 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Let's Connect
+            Contact
           </h2>
           <div className="w-24 h-1 bg-sap-blue mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to discuss your SAP BTP requirements or explore collaboration opportunities? 
-            Let's build something amazing together.
+            Feel free to reach out if you'd like to connect or learn more about my work.
           </p>
         </div>
         
@@ -89,13 +88,12 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-2xl flex items-center gap-3">
                   <Phone className="h-6 w-6 text-sap-blue" />
-                  Get In Touch
+                  Contact Information
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I'm always open to discussing new opportunities, collaborations, or 
-                  sharing insights about SAP BTP administration and cloud integrations.
+                  I'm open to discussing opportunities and connecting with fellow professionals in the SAP ecosystem.
                 </p>
                 
                 <div className="space-y-4">
@@ -123,20 +121,20 @@ const Contact = () => {
               </CardContent>
             </Card>
             
-            {/* Quick Contact CTA */}
+            {/* Professional Summary */}
             <Card className="enterprise-card bg-gradient-to-br from-sap-blue/5 to-sap-blue/10 border-sap-blue/20">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-foreground">
-                  Ready to Start Your SAP BTP Journey?
+                  About My Work
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Whether you need BTP administration, cloud integrations, or Fiori implementations, 
-                  I'm here to help transform your enterprise landscape.
+                  Passionate about SAP BTP administration and cloud technologies. Always learning and 
+                  exploring new ways to optimize enterprise cloud landscapes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button className="btn-enterprise flex-1">
                     <Mail className="mr-2 h-4 w-4" />
-                    Email Me Directly
+                    Email Me
                   </Button>
                   <Button variant="outline" className="border-sap-blue text-sap-blue hover:bg-sap-blue hover:text-white">
                     <Linkedin className="mr-2 h-4 w-4" />
@@ -188,28 +186,28 @@ const Contact = () => {
                   
                   <div className="space-y-2">
                     <Label htmlFor="subject">Subject *</Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      placeholder="e.g., SAP BTP Implementation Discussion"
-                      required
-                      className="border-sap-blue/20 focus:border-sap-blue"
-                    />
+                      <Input
+                        id="subject"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="e.g., Hello! / Question about your experience"
+                        required
+                        className="border-sap-blue/20 focus:border-sap-blue"
+                      />
                   </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="message">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell me about your project requirements, timeline, or any specific questions you have about SAP BTP..."
-                      required
-                      className="min-h-[120px] border-sap-blue/20 focus:border-sap-blue resize-none"
-                    />
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Your message here..."
+                        required
+                        className="min-h-[120px] border-sap-blue/20 focus:border-sap-blue resize-none"
+                      />
                   </div>
                   
                   <Button 
