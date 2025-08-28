@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Eye } from "lucide-react";
 import heroImage from "@/assets/hero-banner.jpg";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/utsav.jpg";
 
 const Hero = () => {
   return (
@@ -51,32 +51,42 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-white text-sap-blue hover:bg-white/90 shadow-xl hover:shadow-2xl transition-all duration-300 px-8 py-6 text-lg font-semibold"
+              asChild
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <a href="https://drive.google.com/file/d/1O5Bem6ndpkbZAOR6t2o0LKnAmOQG6ZfT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Eye className="mr-2 h-5 w-5 text-sap-blue" />
+                View Resume
+              </a>
             </Button>
             
             <div className="flex gap-4">
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-sap-blue shadow-xl hover:shadow-2xl transition-all duration-300 p-6"
+              <Button
+                size="lg"
+                className="bg-white text-sap-blue hover:bg-white/90 shadow-xl hover:shadow-2xl transition-all duration-300 p-6"
+                asChild
               >
-                <Linkedin className="h-6 w-6" />
+                <a
+                  href="https://www.linkedin.com/in/udit-utsav-95660a18b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-6 w-6 text-sap-blue" />
+                </a>
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-sap-blue shadow-xl hover:shadow-2xl transition-all duration-300 p-6"
+              <Button
+                size="lg"
+                className="bg-white text-sap-blue hover:bg-white/90 shadow-xl hover:shadow-2xl transition-all duration-300 p-6"
+                asChild
               >
-                <Github className="h-6 w-6" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-sap-blue shadow-xl hover:shadow-2xl transition-all duration-300 p-6"
-              >
-                <Mail className="h-6 w-6" />
+                <a
+                  href="https://github.com/utsav-07"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <Github className="h-6 w-6 text-sap-blue" />
+                </a>
               </Button>
             </div>
           </div>

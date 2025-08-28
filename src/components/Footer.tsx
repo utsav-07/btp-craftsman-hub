@@ -25,23 +25,32 @@ const Footer = () => {
               <Button 
                 size="sm" 
                 variant="outline" 
-                className="border-white/20 text-white hover:bg-white hover:text-foreground"
+                className="bg-transparent border-white/20 text-white hover:bg-white hover:text-foreground"
+                asChild
               >
-                <Linkedin className="h-4 w-4" />
+                <a href="https://www.linkedin.com/in/udit-utsav-95660a18b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <Linkedin className="h-4 w-4" />
+                </a>
               </Button>
               <Button 
                 size="sm" 
                 variant="outline" 
-                className="border-white/20 text-white hover:bg-white hover:text-foreground"
+                className="bg-transparent border-white/20 text-white hover:bg-white hover:text-foreground"
+                asChild
               >
-                <Github className="h-4 w-4" />
+                <a href="https://github.com/utsav-07" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <Github className="h-4 w-4" />
+                </a>
               </Button>
               <Button 
                 size="sm" 
                 variant="outline" 
-                className="border-white/20 text-white hover:bg-white hover:text-foreground"
+                className="bg-transparent border-white/20 text-white hover:bg-white hover:text-foreground"
+                asChild
               >
-                <Mail className="h-4 w-4" />
+                <a href="mailto:uditutsav07@gmail.com" aria-label="Email">
+                  <Mail className="h-4 w-4" />
+                </a>
               </Button>
             </div>
           </div>
@@ -95,7 +104,7 @@ const Footer = () => {
             onClick={scrollToTop}
             variant="outline"
             size="sm"
-            className="border-white/20 text-white hover:bg-white hover:text-foreground"
+            className="bg-transparent border-white/20 text-white hover:bg-white hover:text-foreground"
           >
             <ArrowUp className="h-4 w-4 mr-2" />
             Back to Top

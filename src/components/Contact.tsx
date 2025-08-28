@@ -1,45 +1,9 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Mail, Linkedin, Github, MapPin, Phone, Send } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Mail, Linkedin, Github, Phone } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simulate form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  
 
   const contactInfo = [
     {
@@ -52,19 +16,13 @@ const Contact = () => {
       icon: <Linkedin className="h-6 w-6 text-sap-blue" />,
       title: "LinkedIn",
       content: "Connect on LinkedIn",
-      link: "#"
+      link: "https://www.linkedin.com/in/udit-utsav-95660a18b/"
     },
     {
       icon: <Github className="h-6 w-6 text-sap-blue" />,
       title: "GitHub",
       content: "View My Code",
-      link: "#"
-    },
-    {
-      icon: <MapPin className="h-6 w-6 text-sap-blue" />,
-      title: "Location",
-      content: "Available for Remote Work",
-      link: null
+      link: "https://github.com/utsav-07"
     }
   ];
 
@@ -81,7 +39,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+        <div className="max-w-3xl mx-auto space-y-12">
           {/* Contact Information */}
           <div className="space-y-8 animate-slide-in-left">
             <Card className="enterprise-card">
@@ -132,92 +90,19 @@ const Contact = () => {
                   exploring new ways to optimize enterprise cloud landscapes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button className="btn-enterprise flex-1">
-                    <Mail className="mr-2 h-4 w-4" />
-                    Email Me
+                  <Button className="btn-enterprise flex-1" asChild>
+                    <a href="mailto:uditutsav07@gmail.com">
+                      <Mail className="mr-2 h-4 w-4" />
+                      Email Me
+                    </a>
                   </Button>
-                  <Button variant="outline" className="border-sap-blue text-sap-blue hover:bg-sap-blue hover:text-white">
-                    <Linkedin className="mr-2 h-4 w-4" />
-                    LinkedIn
+                  <Button variant="outline" className="border-sap-blue text-sap-blue hover:bg-sap-blue hover:text-white" asChild>
+                    <a href="https://www.linkedin.com/in/udit-utsav-95660a18b/" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="mr-2 h-4 w-4" />
+                      LinkedIn
+                    </a>
                   </Button>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-          
-          {/* Contact Form */}
-          <div className="animate-slide-in-right">
-            <Card className="enterprise-card">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center gap-3">
-                  <Send className="h-6 w-6 text-sap-blue" />
-                  Send a Message
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Your full name"
-                        required
-                        className="border-sap-blue/20 focus:border-sap-blue"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="your.email@company.com"
-                        required
-                        className="border-sap-blue/20 focus:border-sap-blue"
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject *</Label>
-                      <Input
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        placeholder="e.g., Hello! / Question about your experience"
-                        required
-                        className="border-sap-blue/20 focus:border-sap-blue"
-                      />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message *</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Your message here..."
-                        required
-                        className="min-h-[120px] border-sap-blue/20 focus:border-sap-blue resize-none"
-                      />
-                  </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full btn-enterprise text-lg py-6"
-                  >
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Message
-                  </Button>
-                </form>
               </CardContent>
             </Card>
           </div>

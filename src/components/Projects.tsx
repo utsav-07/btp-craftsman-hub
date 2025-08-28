@@ -112,15 +112,7 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                {/* Action Button */}
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="w-full border-sap-blue text-sap-blue hover:bg-sap-blue hover:text-white transition-all duration-300"
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Details
-                </Button>
+              
               </CardContent>
             </Card>
           ))}

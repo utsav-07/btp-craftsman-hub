@@ -175,27 +175,7 @@ const Achievements = () => {
             </CardContent>
           </Card>
           
-          {/* Key Metrics */}
-          <div className="grid md:grid-cols-3 gap-6 mt-16">
-            <Card className="enterprise-card text-center hover-lift animate-fade-in-up">
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-sap-blue mb-2">5+</div>
-                <p className="text-muted-foreground">Major Projects</p>
-              </CardContent>
-            </Card>
-            <Card className="enterprise-card text-center hover-lift animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-sap-blue mb-2">4</div>
-                <p className="text-muted-foreground">Enterprise Clients</p>
-              </CardContent>
-            </Card>
-            <Card className="enterprise-card text-center hover-lift animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <CardContent className="p-6">
-                <div className="text-3xl font-bold text-sap-blue mb-2">100%</div>
-                <p className="text-muted-foreground">Project Success Rate</p>
-              </CardContent>
-            </Card>
-          </div>
+        
         </div>
       </div>
     </section>

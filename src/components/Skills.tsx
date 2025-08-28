@@ -121,30 +121,7 @@ const Skills = () => {
           ))}
         </div>
         
-        {/* Professional Certifications Teaser */}
-        <div className="text-center mt-16 animate-fade-in-up">
-          <Card className="enterprise-card max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
-                Continuous Learning & Certification
-              </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Actively pursuing SAP BTP certifications and staying current with latest cloud technologies and best practices.
-              </p>
-              <div className="flex flex-wrap justify-center gap-3">
-                <Badge variant="outline" className="border-sap-blue text-sap-blue px-4 py-2">
-                  SAP BTP Certified
-                </Badge>
-                <Badge variant="outline" className="border-sap-blue text-sap-blue px-4 py-2">
-                  Cloud Architecture
-                </Badge>
-                <Badge variant="outline" className="border-sap-blue text-sap-blue px-4 py-2">
-                  Integration Specialist
-                </Badge>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+      
       </div>
     </section>
   );
