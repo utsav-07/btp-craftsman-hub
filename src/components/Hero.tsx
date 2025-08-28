@@ -53,7 +53,7 @@ const Hero = () => {
               className="bg-white text-sap-blue hover:bg-white/90 shadow-xl hover:shadow-2xl transition-all duration-300 px-8 py-6 text-lg font-semibold"
               asChild
             >
-              <a href="https://drive.google.com/file/d/1unNQyv4hEnBSHBmDOv1zREJP1aKg3C3I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1-BKlGlnRqjb8HQXTzOxPvIbuSzbAsbHi/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Eye className="mr-2 h-5 w-5 text-sap-blue" />
                 View Resume
               </a>
