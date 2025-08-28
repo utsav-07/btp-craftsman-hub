@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				sap: {
+					blue: 'hsl(var(--sap-blue))',
+					'blue-dark': 'hsl(var(--sap-blue-dark))',
+					'blue-light': 'hsl(var(--sap-blue-light))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
